@@ -43,7 +43,7 @@ public class ProductRepoImpl implements ProductRepo {
             product.setShop(resultSet.getString(10));
             product.setWarranty(resultSet.getString(11));
             product.setSoldOut(resultSet.getBoolean(12));
-            product.add(product);
+            productDto.add(product);
         }
         closeConnection();
         return productDto;
